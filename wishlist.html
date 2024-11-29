@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блог</title>
+    <style>
+      body {
+        background-image: url("img/wow.jpg"); /* Путь к вашему изображению */
+        background-size: cover; /* Масштабируем изображение */
+        background-position: center; /* Центрируем */
+        background-attachment: fixed; /* Фон остается на месте при прокрутке */
+        color: #282323; /* Устанавливаем цвет текста, чтобы он хорошо контрастировал с фоном */
+        font-family: "Arial", sans-serif;
+      }
+      nav {
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo img {
+        height: 40px;
+        margin-right: 10px;
+      }
+      .logo span {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .content {
+        text-align: center;
+        padding: 50px;
+      }
+      .wishlist-text {
+        font-family: "Arial", sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        text-align: center;
+        margin: 20px auto;
+        padding: 10px 15px;
+        max-width: 600px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="img/лого.jpg"
+          alt="Logo"
+          style="
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          "
+        />
+        <span>Китепблог</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Башкы бет</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="wishlist.html">Вишлист</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+    </nav>
+    <div class="content">
+      <h1>Вишлист</h1>
+      <p class="wishlist-text">
+        Менин вишлистиме кош келиңиз! Бул жерде мен окууну эңсеген китептер,
+        ошондой эле мени шыктандырган нерселер жана идеялар чогултулган. Бул
+        тизмем – менин кичинекей максаттарым жана аткаргым келген каалоолорум.
+      </p>
+    </div>
+  </body>
+</html>

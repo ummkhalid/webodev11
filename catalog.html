@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог книг</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("img/wow.jpg"); /* Путь к вашему изображению */
+        background-size: cover; /* Масштабируем изображение */
+        background-position: center; /* Центрируем */
+        background-attachment: fixed; /* Фон остается на месте при прокрутке */
+        color: #fff; /* Устанавливаем цвет текста, чтобы он хорошо контрастировал с фоном */
+        font-family: "Arial", sans-serif;
+      }
+
+      .navbar {
+        background-color: #6d2929; /* Темный фиолетовый */
+      }
+
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #fff !important;
+      }
+
+      .navbar-nav .nav-link {
+        color: #dcdcdc !important;
+        transition: color 0.3s;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #fff !important;
+      }
+
+      h1 {
+        color: #6d2929;
+        font-weight: bold;
+      }
+
+      .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-title {
+        color: #6d2929;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .btn-success {
+        background-color: #6d2929;
+        border: none;
+      }
+
+      .btn-success:hover {
+        background-color: #6d2929;
+      }
+
+      footer {
+        background-color: #6d2929;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      footer a {
+        color: #dcdcdc;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="img/лого.jpg"
+            alt="Logo"
+            class="rounded-circle me-2"
+            style="height: 40px; width: 40px; object-fit: cover"
+          />
+          Китепблог
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Башкы бет</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Регистрация</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html">Вишлист</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container py-5">
+      <h1 class="text-center mb-5">Наш каталог</h1>
+
+      <div class="row g-4">
+        <!-- Карточка книги 1 -->
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img
+              src="/img/novyi.jpg"
+              class="card-img-top"
+              alt="Жаңы чыккан китептер"
+              style="height: 300px; object-fit: cover"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Жаңы чыккан китептер</h5>
+              <button class="btn btn-success w-100">Кененирээк</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Карточка книги 2 -->
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img
+              src="/img/kopsatylgan.jpg"
+              class="card-img-top"
+              alt="Көп окулган китептер"
+              style="height: 300px; object-fit: cover"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Көп окулган китептер</h5>
+              <button class="btn btn-success w-100">Кененирээк</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Карточка книги 3 -->
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img
+              src="/img/derskiy.jpg"
+              class="card-img-top"
+              alt="Балдар үчүң китептер"
+              style="height: 300px; object-fit: cover"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Балдар үчүң китептер</h5>
+              <button class="btn btn-success w-100">Кененирээк</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Карточка книги 4 -->
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img
+              src="/img/adabiy.jpg"
+              class="card-img-top"
+              alt="Көркөм адабият"
+              style="height: 300px; object-fit: cover"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Көркөм адабият</h5>
+              <button class="btn btn-success w-100">Кененирээк</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Китепблог. Все права защищены.</p>
+      <a href="#">Политика конфиденциальности</a> |
+      <a href="#">Условия использования</a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
